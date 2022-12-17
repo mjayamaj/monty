@@ -1,28 +1,10 @@
-Gifftybabe
-/
-monty
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-monty/pchar.c
-@Gifftybabe
-Gifftybabe Implement the pchar opcode.
- 2 contributors
-Executable File  33 lines (31 sloc)  638 Bytes
 #include "monty.h"
-
 /**
-* f_pchar -: function that prints the char at the top of the stack,
-* followed by a new line
-* @head: stack head
-* @counter: line count
-*
-* Return: nothing
+ * f_pchar - prints the char at the top of the stack,
+ * followed by a new line
+ * @head: stack head
+ * @counter: line_number
+ * Return: no return
 */
 void f_pchar(stack_t **head, unsigned int counter)
 {
