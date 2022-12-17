@@ -1,14 +1,17 @@
 #include "monty.h"
+
 /**
-* execute - executes the opcode
-* @stack: head linked list - stack
-* @counter: line_counter
-* @file: poiner to monty file
+* execute - function that executes the opcode
+* @stack: head stack linked list
+* @counter: line count
+* @file: pointer to monty file stream
 * @content: line content
-* Return: no return
+*
+* Return: nothing
 */
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
+
 	instruction_t opst[] = {
 				{"push", f_push}, {"pall", f_pall}, {"pint", f_pint},
 				{"pop", f_pop},
@@ -27,6 +30,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"stack", f_stack},
 				{NULL, NULL}
 				};
+
 	unsigned int i = 0;
 	char *op;
 
@@ -42,6 +46,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		}
 		i++;
 	}
+
 	if (op && opst[i].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, op);
 		fclose(file);
