@@ -4,7 +4,6 @@
 * f_rotr - function that rotates the stack to the bottom
 * @head: stack head of the stack
 * @counter: line count
-*
 * Return: nothing
 */
 
