@@ -1,21 +1,3 @@
-
-sammiearchie77
-/
-monty
-Public
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-monty/monty_operators.c
-@sammiearchie77
-sammiearchie77 BrainF*ck
- 1 contributor
-172 lines (165 sloc)  3.13 KB
 #include "monty.h"
 
 /**
